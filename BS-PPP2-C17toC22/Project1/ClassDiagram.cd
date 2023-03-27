@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Graph_lib::Font" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAACAAg=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graph_lib::Vector_ref&lt;T&gt;" Collapsed="true">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIEACAAAAAEAAAAAABAAAAAAAiA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graph_lib::Shape" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEAAKAABAAACCAAAIEAAABCBAEAECAAAIgAAAGAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graph_lib::Widget" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAABSAQAAASBAAAAAQgACABAAgAAAAAAA=</HashCode>
+      <FileName>GUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graph_lib::Button" Collapsed="true">
+    <Position X="0.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>GUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graph_lib::Window" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAIAAAAAAQAQAQKCQQgADAAABAA=</HashCode>
+      <FileName>Window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Matrix&lt;T, D&gt;" Collapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Row&lt;T, D&gt;" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Matrix_base&lt;T&gt;" Collapsed="true">
+    <Position X="3" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAAQAEBAQAAgBAIAAACAAAAAAAAAAQAAyAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Matrix&lt;T, 1&gt;" Collapsed="true">
+    <Position X="0.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEgAAAAAAEAAAEAAgAQACAAEgAAAAAKAgDAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Matrix&lt;T, 2&gt;" Collapsed="true">
+    <Position X="3" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEgAAAAAAkAAAEAAgAQACAAEgEAAAAKAgDAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Matrix&lt;T, 3&gt;" Collapsed="true">
+    <Position X="5.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEgAAAAAA0AAAEAAgAQACAAEgEAAAAKAgDACAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Row&lt;T, 1&gt;" Collapsed="true">
+    <Position X="0.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Row&lt;T, 2&gt;" Collapsed="true">
+    <Position X="3" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric_lib::Row&lt;T, 3&gt;" Collapsed="true">
+    <Position X="5.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Graph_lib::Color" Collapsed="true">
+    <Position X="33.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAACAABAAgABAAAg=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Line_style" Collapsed="true">
+    <Position X="26.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAQAAAAAAAAAAEAAAAAIgAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Function" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Fill" Collapsed="true">
+    <Position X="31.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAABAAAACBAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Line" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Rectangle" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAAAAAAgAEAAQAgAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Open_polyline" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAACAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Closed_polyline" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Polygon" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAACAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Lines" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAACAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Text" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAIEAAgAEAABAAAAAAAAAAAAACAUAAABAACAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Axis" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAIAAAAAARCAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Circle" Collapsed="true">
+    <Position X="24" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACAAAAAAAAAAACAAAAAgAAEAAAAABAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Ellipse" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAACAAAAAAAAAAAAAAAAAAAAAEAAQAgAAAAgIgA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Marked_polyline" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Marks" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Mark" Collapsed="true">
+    <Position X="6" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Bad_image" Collapsed="true">
+    <Position X="31.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Suffix" Collapsed="true">
+    <Position X="28.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Image" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAACAAEEAAAAAAAAAAFIAQEgAAAAAgAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::In_box" Collapsed="true">
+    <Position X="3" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAAAAAAAAAAAAAAAAAAACAAAQAAAAAAAA=</HashCode>
+      <FileName>GUI.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Out_box" Collapsed="true">
+    <Position X="5.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>GUI.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Menu" Collapsed="true">
+    <Position X="7.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAACAAAAAABAAAAAIAACAhABAAAAAAAA=</HashCode>
+      <FileName>GUI.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph_lib::Point" Collapsed="true">
+    <Position X="31.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Point.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Simple_window" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAEAAAAAAAAAAAAAAAAAAAAAAAADAAAAAQAIAAAA=</HashCode>
+      <FileName>Simple_window.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Range_error" Collapsed="true">
+    <Position X="33.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAABAAA=</HashCode>
+      <FileName>std_lib_facilities.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Vector&lt;T&gt;" Collapsed="true">
+    <Position X="31.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>std_lib_facilities.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="String" Collapsed="true">
+    <Position X="26.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>std_lib_facilities.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Exit" Collapsed="true">
+    <Position X="30" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>std_lib_facilities.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Matrix_error" Collapsed="true">
+    <Position X="28.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Assign&lt;T&gt;" Collapsed="true">
+    <Position X="30" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Add_assign&lt;T&gt;" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Mul_assign&lt;T&gt;" Collapsed="true">
+    <Position X="33.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Minus_assign&lt;T&gt;" Collapsed="true">
+    <Position X="30" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Div_assign&lt;T&gt;" Collapsed="true">
+    <Position X="28.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Mod_assign&lt;T&gt;" Collapsed="true">
+    <Position X="31.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Or_assign&lt;T&gt;" Collapsed="true">
+    <Position X="30" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Xor_assign&lt;T&gt;" Collapsed="true">
+    <Position X="33.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::And_assign&lt;T&gt;" Collapsed="true">
+    <Position X="28.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Not_assign&lt;T&gt;" Collapsed="true">
+    <Position X="28.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Not&lt;T&gt;" Collapsed="true">
+    <Position X="26.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Unary_minus&lt;T&gt;" Collapsed="true">
+    <Position X="30" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Numeric_lib::Complement&lt;T&gt;" Collapsed="true">
+    <Position X="26.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="std::hash&lt;String&gt;" Collapsed="true">
+    <Position X="33.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>std_lib_facilities.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="Graph_lib::Fct" Collapsed="true">
+    <Position X="30" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Graph_lib::Address" Collapsed="true">
+    <Position X="26.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GUI.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Graph_lib::Callback" Collapsed="true">
+    <Position X="28.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GUI.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Numeric_lib::Index" Collapsed="true">
+    <Position X="31.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
