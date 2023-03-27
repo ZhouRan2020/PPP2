@@ -143,9 +143,6 @@
   <ItemGroup>
     <ClCompile Include="C6_calculater_self2.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\C3T1\std_lib_facilities.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

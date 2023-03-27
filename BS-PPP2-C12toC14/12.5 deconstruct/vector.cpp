@@ -1,9 +1,9 @@
 #include "vector.h"
-
 vector::vector(int s)
 	:sz{ s }, elem{ new double[s] }
 {
-	for (int i = 0; i < s; ++i)elem[i] = 0;
+	for (int i = 0; i < s; ++i)
+		elem[i] = 0;
 }
 
 vector::~vector()
@@ -11,14 +11,17 @@ vector::~vector()
 	delete[] elem;
 }
 
-double vector::get(int n) {
+double vector::get(int n) 
+{
 	return vector::elem[n];
 }
 
-void vector::set(int n, double v) {
+void vector::set(int n, double v) 
+{
 	vector::elem[n] = v;
 }
 
-int vector::size() {
+int vector::size() 
+{
 	return vector::sz;
 }

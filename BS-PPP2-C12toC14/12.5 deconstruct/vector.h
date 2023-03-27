@@ -1,12 +1,11 @@
 #pragma once
-class vector
-{
+class vector{
 public:
 	vector(int);
 
-	~vector(void);
+	~vector();
 
-	int size(void);
+	int size();
 
 	double get(int);
 

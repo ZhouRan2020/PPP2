@@ -1,16 +1,14 @@
 ﻿/********************************************************************************/
-#include "..\C3T1\std_lib_facilities.h"
+#include "../std_lib_facilities.h"
 #include <limits>
-
 /*
 * 键盘输入字符流
-* 但是被类tokenstream封装成token流，用tokenstream读数据，我们读到的最小单位只能是token
+* 但是被类token stream封装成token流，用token stream读数据，我们读到的最小单位只能是token
 * 有的字符就是token，而有的不一定，特别的，换行符是一个token。
 * 用户每次输入的序列，称为一个calculation。calculation一定以token换行符结尾，这是由键盘输入特性决定的。
 * 至此，语法树和课本相同。
 * 
 */
-
 class Token {
 public:
     char kind;

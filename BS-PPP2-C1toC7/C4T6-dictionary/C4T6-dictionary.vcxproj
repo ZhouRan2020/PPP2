@@ -142,9 +142,6 @@
   <ItemGroup>
     <ClCompile Include="C4T6-dictionary.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\C3T2\std_lib_facilities.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
