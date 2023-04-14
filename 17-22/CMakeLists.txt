@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.23)
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 17)
+#set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 project(gcodes VERSION 23.4.6 LANGUAGES C CXX)
 ### Require out-of-source builds
 file(TO_CMAKE_PATH "${PROJECT_BINARY_DIR}/CMakeLists.txt" LOC_PATH)
@@ -29,6 +30,11 @@ target_link_libraries(rrrrrr
 	#fltkzd
 )
 target_include_directories(rrrrrr
-PRIVATE ${CMAKE_SOURCE_DIR}/Graph_lib/include
+PUBLIC ${CMAKE_SOURCE_DIR}/Graph_lib/include
 	#${CMAKE_SOURCE_DIR}/Graph_lib/fltk-dist-1.3.8/include	
+)
+
+add_executable(test
+	${CMAKE_SOURCE_DIR}/src/test.cpp
+	#${all_sources}	
 )

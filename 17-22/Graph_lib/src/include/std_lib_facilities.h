@@ -43,7 +43,7 @@
 #include <regex>
 #include<random>
 #include<stdexcept>
-
+using namespace std;
 //------------------------------------------------------------------------------
 #if __GNUC__ && __GNUC__ < 5
 inline ios_base& defaultfloat(ios_base& b)	// to augment fixed and scientific as in C++11
@@ -58,7 +58,7 @@ using Unicode = long;
 
 //------------------------------------------------------------------------------
 
-using namespace std;
+
 
 template<class T> string to_string(const T& t)
 {

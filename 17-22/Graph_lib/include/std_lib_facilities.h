@@ -45,13 +45,13 @@
 #include<stdexcept>
 
 //------------------------------------------------------------------------------
-#if __GNUC__ && __GNUC__ < 5
-inline ios_base& defaultfloat(ios_base& b)	// to augment fixed and scientific as in C++11
-{
-	b.setf(ios_base::fmtflags(0), ios_base::floatfield);
-	return b;
-}
-#endif
+// #if __GNUC__ && __GNUC__ < 5
+// inline ios_base& defaultfloat(ios_base& b)	// to augment fixed and scientific as in C++11
+// {
+// 	b.setf(ios_base::fmtflags(0), ios_base::floatfield);
+// 	return b;
+// }
+// #endif
 //------------------------------------------------------------------------------
 
 using Unicode = long;

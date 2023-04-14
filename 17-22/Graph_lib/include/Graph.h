@@ -145,7 +145,7 @@ public:
 	int number_of_points() const { return int(points.size()); }
 
 	virtual ~Shape() { }
-	/*
+	*//*
 	struct Window* attached;
 	Shape(const Shape& a)
 		:attached(a.attached), points(a.points), line_color(a.line_color), ls(a.ls)
@@ -316,7 +316,7 @@ private:
 	int w;
 	int h;
 };
-/*
+*//*
 struct Mark : Text {
 	static const int dw = 4;
 	static const int dh = 4;
@@ -340,7 +340,7 @@ struct Mark : Marks {
 	Mark(Point xy, char c) : Marks(string(1,c)) {add(xy); }
 };
 
-/*
+*//*
 
 struct Marks : Shape {
 	Marks(char m) : mark(string(1,m)) { }

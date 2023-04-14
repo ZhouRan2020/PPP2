@@ -1,14 +1,15 @@
 //#include "Simple_window.h"    // get access to our window library
 #include "Graph.h"            // get access to our graphics library facilities
+#include "Point.h"
 #include <iostream>
 //------------------------------------------------------------------------------
 
 int main()
 {
     //using namespace Graph_lib;   // our graphics facilities are in Graph_lib
-	//´´½¨´°¿Ú
-    Graph_lib::Point left_up(100, 100);           // to become top left  corner of window
-	Graph_lib::Color c1(Graph_lib::Color::red);
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    Graph_lib::Point left_up(100, 100);          // to become top left  corner of window
+	Graph_lib::Color c1(Graph_lib::Color::red); 
 	cout<<c1.as_int();
 	Fl_Color fc1{};
 	cout<<fc1;
@@ -18,7 +19,7 @@ int main()
 	//int x_grid = 80;
 	//int y_grid = 40;
 
-	////´´½¨Õ¤¸ñ
+	////ï¿½ï¿½ï¿½ï¿½Õ¤ï¿½ï¿½
 	//Lines grid;
 	//for (int x = x_grid; x < x_size; x += x_grid)
 	//	grid.add(Point{ x,0 }, Point{ x,y_size });
@@ -28,7 +29,7 @@ int main()
 	//grid.set_style(Line_style{Line_style::dash,2});
 	//win.attach(grid);
 
-	////´´½¨³¤·½ÐÎ
+	////ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	//Graph_lib::Rectangle rect00{ Point{150,100},200,100 };
 	//rect00.set_fill_color(Color::yellow);
 	//Graph_lib::Rectangle rect11{ Point{50,50},Point{250,150} };
