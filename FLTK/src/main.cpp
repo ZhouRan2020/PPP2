@@ -1,7 +1,7 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 #include <FL/Fl_Box.H>
-
+#include <iostream>
 int main(int argc, char** argv) {
     Fl_Window* window = new Fl_Window(300, 180);
     Fl_Box* box = new Fl_Box(20, 40, 260, 100, "Hello, World!");

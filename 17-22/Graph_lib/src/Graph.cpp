@@ -270,7 +270,7 @@ void Marked_polyline::draw_lines() const
 	for (int i=0; i<number_of_points(); ++i) 
 		draw_mark(point(i),mark[i%mark.size()]);
 }
-/*
+
 void Marks::draw_lines() const
 {
 	for (int i=0; i<number_of_points(); ++i) 
