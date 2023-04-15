@@ -20,7 +20,7 @@ target_link_libraries(Graph_lib
 	#fltk_zd
 )
 target_include_directories(Graph_lib
-	PUBLIC ${CMAKE_SOURCE_DIR}/fltk/include
+	PRIVATE ${CMAKE_SOURCE_DIR}/fltk/include
 	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src/include
 	#PUBLIC ${CMAKE_SOURCE_DIR}/fltk-dist-1.3.8/include
 )

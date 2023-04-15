@@ -1,13 +1,18 @@
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.26)
 set(CMAKE_CXX_STANDARD 20)
-#set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_COMPILER "clang++")
+set(CMAKE_C_COMPILER "clang")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-project(gcodes VERSION 23.4.6 LANGUAGES C CXX)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+project(gcodes VERSION 23.4.15 LANGUAGES CXX C)
 ### Require out-of-source builds
 file(TO_CMAKE_PATH "${PROJECT_BINARY_DIR}/CMakeLists.txt" LOC_PATH)
 if(EXISTS "${LOC_PATH}")
     message(FATAL_ERROR "You cannot build in a source directory (or any directory with a CMakeLists.txt file). Please make a build subdirectory. Feel free to remove CMakeCache.txt and CMakeFiles.")
 endif()
+
+
 
 add_subdirectory(Graph_lib)
 #file(GLOB all_sources ${CMAKE_SOURCE_DIR}/interface-lib/src/fltk/*.cpp)
@@ -30,7 +35,7 @@ target_link_libraries(rrrrrr
 	#fltkzd
 )
 target_include_directories(rrrrrr
-PUBLIC ${CMAKE_SOURCE_DIR}/Graph_lib/include
+	PUBLIC ${CMAKE_SOURCE_DIR}/Graph_lib/include
 	#${CMAKE_SOURCE_DIR}/Graph_lib/fltk-dist-1.3.8/include	
 )
 

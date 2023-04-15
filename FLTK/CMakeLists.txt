@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(fltk_demo)
 #-----------------------------------------------
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CLANG_DEFAULT_CXX_STDLIB libc++)
 ADD_EXECUTABLE(main
 	${CMAKE_SOURCE_DIR}/src/main.cpp
