@@ -1,16 +1,16 @@
 #include "Window.h"
-//#include "Graph.h"
-//#include "GUI.h"
+#include "Graph.h"
+#include "GUI.h"
 
-namespace Graph_lib {
+namespace gl{
 
-Window::Window(int ww, int hh, const string& title)
+Window::Window(int ww, int hh, const std::string& title)
 :Fl_Window(ww,hh,title.c_str()),w(ww),h(hh)
 {
 	init();
 }
 
-Window::Window(Point xy, int ww, int hh, const string& title)
+Window::Window(Point xy, int ww, int hh, const std::string& title)
 :Fl_Window(xy.x,xy.y,ww,hh,title.c_str()),w(ww),h(hh)
 { 
 	init();
@@ -27,24 +27,24 @@ void Window::init()
 void Window::draw()
 {
 	Fl_Window::draw();
-////	for (unsigned int i=0; i<shapes.size(); ++i) shapes[i]->draw();
+	for (unsigned int i=0; i<shapes.size(); ++i) shapes[i]->draw();
 }
 
 void Window::attach(Widget& w)
 {
 	begin();			// FTLK: begin attaching new Fl_Wigets to this window
-	////	w.attach(*this);	// let the Widget create its Fl_Wigits
+	w.attach(*this);	// let the Widget create its Fl_Wigits
 	end();				// FTLK: stop attaching new Fl_Wigets to this window
 }
 
 void Window::detach(Widget& b)
 {
-	////  b.hide();
+	b.hide();
 }
 
 void Window::attach(Shape& s)
 {
-		shapes.push_back(&s);
+	shapes.push_back(&s);
 //		s.attached = this;
 }
 void Window::detach(Shape& s)

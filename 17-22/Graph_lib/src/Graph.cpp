@@ -1,8 +1,9 @@
 #include "Graph.h"
-#include<map>
-//#include "fltk.h"
-namespace Graph_lib {
-/*
+#include <functional>
+#include <map>
+
+namespace gl{
+
 void Shape::draw_lines() const
 {
 	if (color().visibility() && 1<points.size())	// draw sole pixel?
@@ -24,7 +25,7 @@ void Shape::draw() const
 
 // does two lines (p1,p2) and (p3,p4) intersect?
 // if se return the distance of the intersect point as distances from p1
-inline pair<double,double> line_intersect(Point p1, Point p2, Point p3, Point p4, bool& parallel) 
+inline std::pair<double,double> line_intersect(Point p1, Point p2, Point p3, Point p4, bool& parallel) 
 {
     double x1 = p1.x;
     double x2 = p2.x;
@@ -38,10 +39,10 @@ inline pair<double,double> line_intersect(Point p1, Point p2, Point p3, Point p4
 	double denom = ((y4 - y3)*(x2-x1) - (x4-x3)*(y2-y1));
 	if (denom == 0){
 		parallel= true;
-		return pair<double,double>(0,0);
+		return std::pair<double,double>(0,0);
 	}
 	parallel = false;
-	return pair<double,double>( ((x4-x3)*(y1-y3) - (y4-y3)*(x1-x3))/denom,
+	return std::pair<double,double>( ((x4-x3)*(y1-y3) - (y4-y3)*(x1-x3))/denom,
 								((x2-x1)*(y1-y3) - (y2-y1)*(x1-x3))/denom);
 }
 
@@ -51,7 +52,7 @@ inline pair<double,double> line_intersect(Point p1, Point p2, Point p3, Point p4
 //in which case intersection is set to the point of intersection
 bool line_segment_intersect(Point p1, Point p2, Point p3, Point p4, Point& intersection){
    bool parallel;
-   pair<double,double> u = line_intersect(p1,p2,p3,p4,parallel);
+   std::pair<double,double> u = line_intersect(p1,p2,p3,p4,parallel);
    if (parallel || u.first < 0 || u.first > 1 || u.second < 0 || u.second > 1) return false;
    intersection.x = p1.x + u.first*(p2.x - p1.x);
    intersection.y = p1.y + u.first*(p2.y - p1.y);
@@ -149,7 +150,19 @@ Function::Function(Fct f, double r1, double r2, Point xy, int count, double xsca
 		r += dist;
 	}
 }
-
+Function::Function( std::function<double(double)> f, double r1, double r2, Point xy, int count, double xscale, double yscale)
+// graph f(x) for x in [r1:r2) using count line segments with (0,0) displayed at xy
+// x coordinates are scaled by xscale and y coordinates scaled by yscale
+{
+	if (r2-r1<=0) error("bad graphing range");
+	if (count<=0) error("non-positive graphing count");
+	double dist = (r2-r1)/count;
+	double r = r1;
+	for (int i = 0; i<count; ++i) {
+		add(Point(xy.x+int(r*xscale),xy.y-int(f(r)*yscale)));
+		r += dist;
+	}
+}
 void Rectangle::draw_lines() const
 {
 	if (fill_color().visibility()) {	// fill
@@ -165,7 +178,7 @@ void Rectangle::draw_lines() const
 }
 
 
-Axis::Axis(Orientation d, Point xy, int length, int n, string lab)
+Axis::Axis(Orientation d, Point xy, int length, int n, std::string lab)
 	:label(Point(0,0),lab)
 {
 	if (length<0) error("bad axis length");
@@ -260,7 +273,7 @@ void draw_mark(Point xy, char c)
 {
 	static const int dx = 4;
 	static const int dy = 4;
-	string m(1,c);
+	std::string m(1,c);
 	fl_draw(m.c_str(),xy.x-dx,xy.y+dy);
 }
 
@@ -270,7 +283,7 @@ void Marked_polyline::draw_lines() const
 	for (int i=0; i<number_of_points(); ++i) 
 		draw_mark(point(i),mark[i%mark.size()]);
 }
-
+/*
 void Marks::draw_lines() const
 {
 	for (int i=0; i<number_of_points(); ++i) 
@@ -278,8 +291,8 @@ void Marks::draw_lines() const
 }
 */
 
-/*
-std::map<string,Suffix::Encoding> suffix_map;
+
+std::map<std::string,Suffix::Encoding> suffix_map;
 
 int init_suffix_map()
 {
@@ -294,29 +307,29 @@ int init_suffix_map()
 	return 0;
 }
 
-Suffix::Encoding get_encoding(const string& s)
+Suffix::Encoding get_encoding(const std::string& s)
 		// try to deduce type from file name using a lookup table
 {
 	static int x = init_suffix_map();
 
-	string::const_iterator p = find(s.begin(),s.end(),'.');
+	std::string::const_iterator p = find(s.begin(),s.end(),'.');
 	if (p==s.end()) return Suffix::none;	// no suffix
 
-	string suf(p+1,s.end());
+	std::string suf(p+1,s.end());
 	return suffix_map[suf];
 }
 
-bool can_open(const string& s)
+bool can_open(const std::string& s)
             // check if a file named s exists and can be opened for reading
 {
-	ifstream ff(s.c_str());
+	std::ifstream ff(s.c_str());
 	return ff.is_open();
 }
 
 
 // somewhat overelaborate constructor
 // because errors related to image files can be such a pain to debug
-Image::Image(Point xy, string s, Suffix::Encoding e)
+Image::Image(Point xy, std::string s, Suffix::Encoding e)
 	:w(0), h(0), fn(xy,"")
 {
 	add(xy);
@@ -354,6 +367,5 @@ void Image::draw_lines() const
 	else
 		p->draw(point(0).x,point(0).y);
 }
-*/
 
 } // Graph

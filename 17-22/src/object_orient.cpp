@@ -4,7 +4,7 @@ class B1 {
 public:
 	virtual void vf() { std::cout << "B1::vf()\n"; }
 		    void  f() { std::cout << "B1:: f()\n"; }
-		virtual	void pvf() =0 { std::cout << "B1::pvf()\n"; }
+		virtual	void pvf() =0;// { std::cout << "B1::pvf()\n"; }
 };
 
 class D1 : public B1 {

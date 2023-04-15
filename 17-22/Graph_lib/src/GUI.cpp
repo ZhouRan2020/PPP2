@@ -2,15 +2,15 @@
 #include "std_lib_facilities.h"
 #include <sstream>
 
-using namespace Graph_lib;
+namespace gl{
 
 
 void Button::attach(Window& win)
-	{
-		pw = new Fl_Button(loc.x, loc.y, width, height, label.c_str());
-		pw->callback(reinterpret_cast<Fl_Callback*>(do_it), &win); // pass the window
-		own = &win;
-	}
+{
+	pw = new Fl_Button(loc.x, loc.y, width, height, label.c_str());
+	pw->callback(reinterpret_cast<Fl_Callback*>(do_it), &win); // pass the window
+	own = &win;
+}
 
 int In_box::get_int()
 {
@@ -21,10 +21,10 @@ int In_box::get_int()
 	return atoi(p);
 }
 
-string In_box::get_string()
+std::string In_box::get_string()
 {
 	Fl_Input& pi = reference_to<Fl_Input>(pw);
-	return string(pi.value());
+	return std::string(pi.value());
 }
 
 void In_box::attach(Window& win)
@@ -41,7 +41,7 @@ void Out_box::put(int i)
 	po.value(ss.str().c_str());
 }
 
-void Out_box::put(const string& s)
+void Out_box::put(const std::string& s)
 {
 	reference_to<Fl_Output>(pw).value(s.c_str());
 }
@@ -52,7 +52,7 @@ void Out_box::attach(Window& win)
 	own = &win;
 }
 
-Menu::Menu(Point xy, int w, int h, Kind kk, const string& s)
+Menu::Menu(Point xy, int w, int h, Kind kk, const std::string& s)
 :Widget(xy,w,h,s,0), k(kk), offset(0)
 {
 }
@@ -81,3 +81,4 @@ int Menu::attach(Button* p)
 //	owned.push_back(p);
 	return attach(*p);
 }
+}//gl

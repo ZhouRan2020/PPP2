@@ -11,40 +11,45 @@
 
 int main()
 {
-	using namespace Graph_lib;   // our graphics facilities are in Graph_lib
+//	using namespace Graph_lib;   // our graphics facilities are in Graph_lib
 
 
 
 
-	Point leftup(100, 100);           // to become top left  corner of window
-	Simple_window win(leftup, 700, 700, "project");    // make a simple window
-	Vector_ref<Rectangle> vr;
+	gl::Point leftup(100, 100);           // to become top left  corner of window
+	gl::Simple_window win(leftup, 700, 700, "project");    // make a simple window
+	win.wait_for_button();       // give control to the display engine
+	Vector_ref<gl::Rectangle> vr;
 	for(int i=0;i<16;++i)
 		for (int j = 0; j < 16; ++j) {
-			vr.push_back(new Rectangle{ Point{i * 20,j * 20},20,20 });
-			vr[vr.size() - 1].set_fill_color(Color{ i * 16 + j });
+			vr.push_back(new gl::Rectangle{ gl::Point{i * 20,j * 20},20,20 });
+			vr[vr.size() - 1].set_fill_color(gl::Color{ i * 16 + j });
 			win.attach(vr[vr.size() - 1]);
 		}
 
-	Marked_polyline mpl{ "abcd" };
-	mpl.add(Point{ 100,100 });
-	mpl.add(Point{ 150,200 });
-	mpl.add(Point{ 250,250 });
-	mpl.add(Point{ 300,200 });
+	win.wait_for_button();       // give control to the display engine
+	gl::Marked_polyline mpl{ "abcd" };
+	mpl.add(gl::Point{ 100,100 });
+	mpl.add(gl::Point{ 150,200 });
+	mpl.add(gl::Point{ 250,250 });
+	mpl.add(gl::Point{ 300,200 });
 	win.attach(mpl);
+	win.wait_for_button();       // give control to the display engine
 
-	Marks pp { "ab" };
+	gl::Marks pp { "ab" };
 	
-	pp.add(Point{ 400,400 });
-	pp.add(Point{ 450,500 });
-	pp.add(Point{ 550,550 });
-	pp.add(Point{ 500,500 });
+	pp.add(gl::Point{ 400,400 });
+	pp.add(gl::Point{ 450,500 });
+	pp.add(gl::Point{ 550,550 });
+	pp.add(gl::Point{ 500,500 });
 	win.attach(pp);
+	win.wait_for_button();       // give control to the display engine
 
-	Mark p{ {600,600},'x' };
+	gl::Mark p{ {600,600},'x' };
 	win.attach(p);
+	win.wait_for_button();       // give control to the display engine
 
-	Image qjl{ Point{400,400},"qjl.jpg",Suffix::jpg};
+	gl::Image qjl{ gl::Point{400,400},"../resource/qjl.jpg",gl::Suffix::jpg};
 	win.attach(qjl);
 
 	/*
