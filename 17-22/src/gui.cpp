@@ -17,7 +17,7 @@ int main()
 
 
 	gl::Point leftup(100, 100);           // to become top left  corner of window
-	gl::Simple_window win(leftup, 700, 700, "project");    // make a simple window
+	Simple_window win(leftup, 800, 800, "project");    // make a simple window
 	win.wait_for_button();       // give control to the display engine
 	Vector_ref<gl::Rectangle> vr;
 	for(int i=0;i<16;++i)
@@ -49,7 +49,7 @@ int main()
 	win.attach(p);
 	win.wait_for_button();       // give control to the display engine
 
-	gl::Image qjl{ gl::Point{400,400},"../resource/qjl.jpg",gl::Suffix::jpg};
+	gl::Image qjl{ gl::Point{400,400},"resource/qjl.jpg",gl::Suffix::jpg};
 	win.attach(qjl);
 
 	/*

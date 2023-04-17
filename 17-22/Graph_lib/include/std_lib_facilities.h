@@ -41,6 +41,7 @@ Revised August 3, 2020: a cleanup removing support for ancient compilers
 #include<algorithm>
 #include<array>
 #include<regex>
+#include<map>
 #include<random>
 #include<stdexcept>
 

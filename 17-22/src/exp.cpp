@@ -34,7 +34,7 @@ int main()
 	constexpr int x_scale = 35;
 	constexpr int y_scale = 35;
 	
-	gl::Simple_window win{ gl::Point{100,100},xmax,ymax,"Function graphing" };
+	Simple_window win{ gl::Point{100,100},xmax,ymax,"Function graphing" };
 
 	for (int n = 0; n < 20; ++n) {
 

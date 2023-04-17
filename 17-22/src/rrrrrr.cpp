@@ -13,7 +13,7 @@ int main()
 	// std::cout<<c1.as_int();
 	// Fl_Color fc1{};
 	// std::cout<<fc1;
-	gl::Simple_window win(left_up, 700, 700, "project");    // make a simple window
+	Simple_window win(left_up, 700, 700, "project");    // make a simple window
 	int x_size = win.x_max();
 	int y_size = win.y_max();
 	int x_grid = 80;

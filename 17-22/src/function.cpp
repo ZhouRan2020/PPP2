@@ -27,7 +27,7 @@ int main()
 	constexpr int y_scale = 35;
 
 	//建立函数图像对象
-	gl::Simple_window win{ gl::Point{100,100},xmax,ymax,"Function graphing" };
+	Simple_window win{ gl::Point{100,100},xmax,ymax,"Function graphing" };
 	win.wait_for_button();	
 	gl::Function s{ one,r_min,r_max,orig,n_points,x_scale,y_scale };
 	gl::Function s2{ slope,r_min,r_max,orig,n_points,x_scale,y_scale };
@@ -69,7 +69,7 @@ int main()
 
 	//建立函数图像对象
 	gl::Function s4{ cos,r_min,r_max,orig,n_points,x_scale,y_scale };
-	gl::Function s5{ [=](double x) {return cos(x) + slope(x); },r_min,r_max,orig,n_points,x_scale,y_scale };
+	gl::Function s5{ [&](double x) {return cos(x) + slope(x); },r_min,r_max,orig,n_points,x_scale,y_scale };
 	s4.set_color(gl::Color::red);
 	x.label.move(-160, 0);
 	x.notches.set_color(gl::Color::dark_red);

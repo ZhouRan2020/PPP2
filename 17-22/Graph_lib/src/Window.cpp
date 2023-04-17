@@ -5,29 +5,24 @@
 namespace gl{
 
 Window::Window(int ww, int hh, const std::string& title)
-:Fl_Window(ww,hh,title.c_str()),w(ww),h(hh)
+	:Fl_Window(ww,hh,title.c_str()),w(ww),h(hh)
 {
 	init();
 }
 
 Window::Window(Point xy, int ww, int hh, const std::string& title)
-:Fl_Window(xy.x,xy.y,ww,hh,title.c_str()),w(ww),h(hh)
+	:Fl_Window(xy.x,xy.y,ww,hh,title.c_str()),w(ww),h(hh)
 { 
 	init();
 }
-
-void Window::init()
-{
-   resizable(this);
-   show();
-} 
 
 //---------------------------------------------------- 
 
 void Window::draw()
 {
 	Fl_Window::draw();
-	for (unsigned int i=0; i<shapes.size(); ++i) shapes[i]->draw();
+	for (unsigned int i=0; i<shapes.size(); ++i) 
+		shapes[i]->draw();
 }
 
 void Window::attach(Widget& w)
@@ -49,9 +44,9 @@ void Window::attach(Shape& s)
 }
 void Window::detach(Shape& s)
 {
-		for (unsigned int i = shapes.size(); 0<i; --i)	// guess last attached will be first released
-			if (shapes[i-1]==&s)
-				shapes.erase(shapes.begin()+(i-1));//&shapes[i-1]);
+	for (unsigned int i = shapes.size(); 0<i; --i)	// guess last attached will be first released
+		if (shapes[i-1]==&s)
+			shapes.erase(shapes.begin()+(i-1));//&shapes[i-1]);
 }
 
 
@@ -66,6 +61,15 @@ void Window::put_on_top(Shape& p) {
 	}
 }
 
-int gui_main() { return Fl::run(); }
+void Window::init()
+{
+	resizable(this);
+	show();
+} 
 
-} // Graph
+int gui_main() 
+{ 
+	return Fl::run(); 
+}
+
+} // gl

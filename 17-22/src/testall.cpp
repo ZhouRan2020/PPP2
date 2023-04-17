@@ -14,7 +14,7 @@ int main()
 //    using namespace Graph_lib;   // our graphics facilities are in Graph_lib
 
     gl::Point leftup(100, 100);           // to become top left  corner of window
-    gl::Simple_window win(leftup, 700, 700, "project");    // make a simple window
+    Simple_window win(leftup, 800, 800, "project");    // make a simple window
     win.wait_for_button();       // give control to the display engine
 
     //x axis
@@ -71,7 +71,7 @@ int main()
     win.wait_for_button();       // give control to the display engine
 
     //image
-    gl::Image ii{ gl::Point{100,50},"../resource/picture.jpg",gl::Suffix::jpg};
+    gl::Image ii{ gl::Point{400,400},"resource/zr.jpg",gl::Suffix::jpg};
     ii.set_mask(gl::Point{ 500,500 }, 200, 150);
     ii.move(200, 200);
     win.attach(ii);
